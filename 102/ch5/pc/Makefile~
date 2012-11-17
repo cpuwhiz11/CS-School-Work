@@ -1,0 +1,18 @@
+# Makefile for Parenthesis checker program
+#
+#
+
+pc : main.o stack.o stackinterface.o 
+	gcc -ansi -Wall -o pc main.o stack.o stackinterface.o
+
+main.o : stack.h stack.c 
+	gcc -ansi -Wall -c main.c
+
+stack.o : stack.h stack.c 
+	gcc -ansi -Wall -c stack.c
+
+stackinterface.o : stackinterface.h stackinterface.c 
+	gcc -ansi -Wall -c stackinterface.c
+
+clean :
+	rm -f *.o 

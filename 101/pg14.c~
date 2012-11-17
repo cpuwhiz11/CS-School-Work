@@ -1,0 +1,22 @@
+/***************************************************************/
+/* Programmer: Paul Matthew Geromini                           */
+/*                                                             */
+/* Program 14: Argc                                            */
+/*                                                             */
+/* Approximate completion time: 12 minutes                     */
+/***************************************************************/
+
+#include <stdio.h>
+
+int main( int argc, char *argv[] ) {
+
+  
+
+  printf( "\n %d \n", argc ) ;
+
+
+
+  return  0 ;
+
+}
+

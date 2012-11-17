@@ -1,0 +1,35 @@
+//Program will calculate the circumfrence and area of a circle based upon a user entered radius.
+
+import java.util.Scanner ;
+import java.lang.Math ;
+
+class Circles {
+
+    public static void main( String[] args ) {
+
+	int radius = 0 ;
+	double temp ;
+	Scanner input = new Scanner( System.in ) ;
+	boolean bool = true ;
+
+	while( bool ) {
+	    System.out.print( "Please enter a radius: " ) ;
+	    radius = input.nextInt() ; 
+	    if( radius < 0 ) System.out.print( "Please enter a value greater than -1. \n " ) ;
+	    else break ;
+	}
+
+	temp = 2 * Math.PI * radius ; 
+	System.out.print( " The circumfrence of the circle of radius : " +  radius ) ;
+	System.out.print( " is : " + temp ) ;
+
+	System.out.print( "\n" ) ;
+
+	temp = Math.PI * ( radius * radius ) ;
+	System.out.print( " The area of the circle of radius : " + radius ) ;
+	System.out.print( " is : " + temp ) ;  
+
+
+    } 
+
+}

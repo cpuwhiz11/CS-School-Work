@@ -1,0 +1,15 @@
+//This file will call another package but since a class in one package cannot access a private member of a class in another package it will fail.
+
+import Fail.* ; 
+
+class Test {
+
+    public static void main( String[] args ) {
+
+	System.out.println( "Attempting to access protected class." ) ;
+	Fail.someclass() ; 
+
+    }
+
+
+}

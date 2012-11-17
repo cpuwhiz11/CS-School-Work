@@ -1,0 +1,22 @@
+//Interface that tells people the time periodically
+
+java.util.Date ;
+
+class timeinter {
+
+    interface P_TIME {
+
+	//Function that when call will return the time ; 
+	String tell_time() ;
+
+    }
+
+    public static void main( String[] args ) {
+
+
+
+    }
+
+
+
+

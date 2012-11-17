@@ -1,0 +1,24 @@
+/***************************************************************/
+/* Programmer: Paul Geromini                                   */
+/*                                                             */
+/* Program 4: The scanf Function                               */
+/*                                                             */
+/* Approximate completion time: 7 Minutes                      */
+/***************************************************************/
+
+#include <stdio.h>
+
+int main( int argc, char *argv[] ) {
+ 
+  int x ;
+
+  printf( "\n Please enter a integer value of your choosing. \n" ) ;
+  
+  scanf( "%d" , &x ) ;
+
+  printf( "\n This is the integer value you entered: %d. \n " , x ) ;
+
+  return  0 ;
+
+}
+

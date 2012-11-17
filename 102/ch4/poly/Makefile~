@@ -1,0 +1,23 @@
+# Makefile for the list primitives 
+#
+#
+
+addpoly : list.o listinterface.o polynomial.o main.o
+	gcc -ansi -Wall -o addpoly list.o listinterface.o polynomial.o main.o
+
+list.o : globals.h list.h 
+	gcc -c -ansi -Wall list.c 
+
+listinterface.o : polynomial.h 
+	gcc -c -ansi -Wall listinterface.c
+
+polynomial.o : listinterface.h  
+	gcc -c -ansi -Wall polynomial.c
+
+main.o : polynomial.h  
+	gcc -ansi -Wall -c main.c 
+
+
+
+clean :
+	rm -f *.o 

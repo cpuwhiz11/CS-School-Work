@@ -1,0 +1,27 @@
+/***************************************************************/
+/* Programmer: Paul Geromini                                   */
+/*                                                             */
+/* Program 80: Building the Fourier Matrix                     */
+/*                                                             */
+/* Approximate completion time: X minutes                      */
+/***************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( int argc, char *argv[] ) {
+
+  int n, **f, i ;
+
+  printf( "Please enter a number to create a n * n array. " ) ;
+  scanf( "%d", &n ) ;
+
+  f = ( int ** ) malloc( sizeof( int ) * n ) ;
+  for( i = 0 ; i < n ; i++ ) {
+    f[ i ] = ( int * ) malloc( sizeof( int ) ) ;
+
+
+
+  return  0 ;
+}
+
