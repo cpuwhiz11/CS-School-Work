@@ -1,0 +1,21 @@
+pgeromin@cs3:~/fall2012/os/ps2/dist$ ./sort
+103 : 87
+215 : 107
+220 : 114
+316 : 96
+403 : 100
+508 : 101
+579 : 103
+604 : 86
+617 : 88
+783 : 77
+
+pgeromin@cs3:~/fall2012/os/ps2/dist$ ./grep1
+Grep has 28 hits
+
+pgeromin@cs3:~/fall2012/os/ps2/dist$ ./grep2
+
+
+
+
+

@@ -1,0 +1,47 @@
+[pgeromin@mercury ps1]$
+This is the Parent process report:
+
+PARENT PROG:  Process ID is:            21876
+PARENT PROC:  Process parent ID is:     21730
+PARENT PROC:  Real UID is:              12259
+PARENT PROC:  Real GID is:              2013
+PARENT PROC:  Effective UID is:         12259
+PARENT PROC:  Effective GID is:         2013
+PARENT PROC:  Process priority is:      0
+Child Process info:
+
+PARENT PROG:  Process ID is:            21877
+CHILD PROC:  Process parent ID is:      21876
+CHILD PROC:  Real UID is:               12259
+CHILD PROC:  Real GID is:               2013
+CHILD PROC:  Effective UID is:          12259
+CHILD PROC:  Effective GID is:          2013
+CHILD PROC:  Process priority is:       0
+CHILD PROC: Entering infinite loop
+PARENT PROC: Created child with pid: 21877
+Sent kill message to child
+
+This is the Prof process report:
+
+PROF PROG:  Process ID is:              21877
+PROF PROG:  Process parent ID is:       21876
+PROF PROG:  Real UID is:                12259
+PROF PROG:  Real GID is:                2013
+PROF PROG:  Effective UID is:           12259
+PROF PROG:  Effective GID is:           2013
+PROF PROG:  Process priority is:        5
+
+PROF PROG: going into and endless loop, use
+ kill 21877   to kill me now
+
+kill 21877
+
+
+PROF PROG: Awake in handler - You Got Me With Signal
+ Number 15 after spinning for more
+ than 1410550405  loop iterations, goodbye
+
+PARENT PROC: Child with pid 21877 killed with the following information.
+Exit code: 1
+[1]+  Done                    ./a.out
+[pgeromin@mercury ps1]$

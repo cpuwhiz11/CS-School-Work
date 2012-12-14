@@ -1,0 +1,865 @@
+Assignment 3
+Paul Geromini
+01056543
+
+	I have completed this assignment and the code works with no noticeable errors, so 100% completion. There is a minor compiler warning that cautions against a "comparison between pointer and integer", but this is not an error so it is ignored.
+	I took the code in class, added in the consumer code, and ran several tests experimenting with the queue size.
+	
+Step 8:
+	The 50% deadlock queue size was around 40-50. As I increased the size up to 70 the percent of deadlocks dropped to 0% and stayed there as the queue sized increased. As the queue size increased the % percent of deadlocks dropped in a linear fashion toward 0. The key is finding the minimum queue size given the number of consumers. For the other graph I observed slightly different behavior. Running 10 loops for each consumer level I tried I found that the number of deadlocks was 0% at low number of consumers, but as the consumers increased the number of deadlocks increased as well. It does however seem to level out at around 5-10 consumers which results in 60%-70% of the loops ending in deadlocks. 
+	
+Sample Output:
+
+pgeromin@cs4:~/fall2012/os/ps3$ ./A3_donut_loop.sh 5
+
+
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+25	18	20	24
+27	22	23	28
+28	27	0	0
+33	28	0	0
+134513564	0	0	134515708
+-1075330504	0	0	134520484
+1302082	1361488	0	-1075330552
+134513212	0	0	134513829
+-1075330572	1869490176	0	0
+1361488	-1075330572	0	0
+1	0	24641422	-1075330520
+1363568	-1075330572	-1075330464	134515734
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+54	43	47	46
+55	44	50	53
+0	50	51	55
+0	52	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+63	58	53	63
+64	60	54	66
+65	61	56	0
+0	62	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+69	65	62	69
+70	0	65	70
+74	0	67	71
+0	0	68	73
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+78	69	73	81
+80	0	75	85
+82	0	77	88
+0	0	78	90
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+84	77	84	91
+85	78	85	93
+0	0	0	94
+0	0	0	95
+0	0	0	96
+0	0	0	97
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+89	81	86	103
+0	82	87	104
+0	83	88	0
+0	84	89	0
+0	0	90	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+92	87	93	106
+93	88	95	107
+94	89	96	0
+0	0	97	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+95	0	99	116
+97	0	102	118
+98	0	103	120
+102	0	105	0
+104	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20654
+Time: 19:44:40
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+0	148	110	124
+0	100	112	125
+0	101	113	126
+0	151	114	0
+0	102	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+1	1	1	1
+2	0	2	2
+3	1	0	3
+4	0	0	4
+5	0	0	134515708
+-1074210696	0	0	134520484
+1302082	1361488	0	-1074210744
+134513212	0	0	134513829
+-1074210764	1869490176	0	0
+1361488	-1074210764	0	0
+1	0	24641422	-1074210712
+1363568	-1074210764	-1074210656	134515734
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+7	2	3	5
+11	3	4	7
+0	5	6	8
+0	7	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+13	9	8	10
+14	10	9	11
+0	0	10	12
+0	0	11	13
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+15	11	12	14
+16	12	13	15
+17	13	14	0
+18	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+19	14	15	16
+20	15	16	17
+21	0	17	21
+0	0	18	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+22	20	21	26
+24	21	22	29
+0	23	0	31
+0	24	0	0
+0	26	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+30	30	27	33
+31	32	28	35
+32	0	29	0
+34	0	0	0
+36	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+37	35	31	38
+40	0	34	39
+42	0	35	0
+0	0	36	0
+0	0	38	0
+0	0	40	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+46	0	42	42
+48	0	49	43
+50	0	0	45
+51	0	0	50
+51	0	0	0
+52	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20655
+Time: 19:44:40
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+56	48	52	58
+58	51	0	59
+60	0	0	60
+62	0	0	61
+0	0	0	62
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+100	92	100	122
+101	93	101	0
+103	146	104	0
+105	0	106	0
+134513564	0	0	134515708
+-1074857864	0	0	134520484
+1302082	1361488	0	-1074857912
+134513212	0	0	134513829
+-1074857932	1869490176	0	0
+1361488	-1074857932	0	0
+1	0	24641422	-1074857880
+1363568	-1074857932	-1074857824	134515734
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+115	106	120	132
+0	107	0	133
+0	108	0	136
+0	109	0	137
+0	110	0	0
+0	111	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+118	112	122	140
+120	114	126	142
+121	115	127	145
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+122	116	128	146
+123	117	129	147
+124	118	0	0
+125	119	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+126	170	130	148
+127	121	131	149
+128	0	132	150
+129	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+130	172	133	30
+131	0	134	151
+132	0	0	152
+0	0	0	153
+0	0	0	154
+0	0	0	155
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+133	173	135	156
+134	174	136	157
+0	175	137	0
+0	176	0	0
+0	177	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+135	178	138	158
+136	179	139	159
+0	180	140	160
+0	131	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+137	132	141	161
+138	183	142	162
+139	0	0	163
+140	0	0	0
+141	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20656
+Time: 19:44:40
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+142	184	143	164
+143	185	144	165
+0	186	145	166
+0	0	0	167
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+53	41	45	48
+57	42	0	4
+1359828	46	0	52
+1361572	49	0	54
+134513564	0	0	56
+-1075288152	0	0	134520484
+1302082	1361488	0	-1075288200
+134513212	0	0	134513829
+-1075288220	1869490176	0	0
+1361488	-1075288220	0	0
+1	0	24641422	-1075288168
+1363568	-1075288220	-1075288112	134515734
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+73	67	69	78
+75	68	76	79
+77	70	0	80
+0	0	0	83
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+81	73	79	89
+83	74	80	92
+0	75	81	0
+0	76	82	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+86	79	83	98
+87	80	0	99
+88	0	0	100
+0	0	0	37
+0	0	0	101
+0	0	0	102
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+90	85	91	105
+91	86	92	108
+0	0	94	109
+0	0	0	110
+0	0	0	111
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+96	90	98	112
+99	91	101	113
+0	0	0	114
+0	0	0	115
+0	0	0	117
+0	0	0	119
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+101	94	107	121
+106	95	108	123
+0	147	109	0
+0	99	111	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+107	103	115	127
+108	104	116	128
+109	0	117	129
+0	0	118	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+110	105	119	130
+111	0	121	131
+112	0	0	134
+113	0	0	135
+114	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20657
+Time: 19:44:40
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+116	113	123	138
+117	0	124	139
+119	0	125	141
+0	0	0	143
+0	0	0	144
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+6	4	5	6
+8	6	7	9
+9	8	0	0
+10	0	0	0
+12	0	0	134515708
+-1074710984	0	0	134520484
+1302082	1361488	0	-1074711032
+134513212	0	0	134513829
+-1074711052	1869490176	0	0
+1361488	-1074711052	0	0
+1	0	24641422	-1074711000
+1363568	-1074711052	-1074710944	134515734
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+23	16	19	18
+0	17	0	19
+0	19	0	20
+0	0	0	22
+0	0	0	23
+0	0	0	25
+0	0	0	27
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+26	25	24	30
+29	29	25	32
+35	31	26	34
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+38	33	30	36
+39	34	32	37
+41	0	33	40
+43	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+44	36	37	41
+45	37	39	0
+47	38	41	0
+49	39	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+0	40	43	44
+0	45	44	47
+0	47	46	49
+0	0	48	51
+0	0	51	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+59	51	55	57
+61	53	0	64
+0	54	0	65
+0	55	0	0
+0	56	0	0
+0	57	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+66	59	57	67
+67	63	58	68
+68	64	59	0
+0	0	60	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+71	66	61	72
+72	0	63	74
+0	0	64	75
+0	0	66	76
+0	0	0	77
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Process PID: 20658
+Time: 19:44:40
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+76	71	70	82
+79	72	71	84
+0	0	72	86
+0	0	74	87
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0

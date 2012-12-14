@@ -1,0 +1,90 @@
+Paul Geromini
+01056543
+
+paul_geromini@student.uml.edu
+Assignment 6
+
+I implemented code based on the discussion we had in class. I finished this project with no notable errors, so 100% completion. 
+
+Sample Run:
+
+[pgeromin@mercury ps6]$ ./p6
+File: main.c
+Type: regular file
+Permissions: rw-r---w-
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:49:08 2012
+Links: 1
+Size: 3399
+I-Node Number: 1201635120
+
+File: Makefile
+Type: regular file
+Permissions: rw-r---w-
+Owner: pgeromin
+Group: cs2013
+Last Modified: Mon Dec  3 22:21:13 2012
+Links: 1
+Size: 96
+I-Node Number: 169674271
+
+File: main.c~
+Type: regular file
+Permissions: rw-r---w-
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:36:47 2012
+Links: 1
+Size: 3390
+I-Node Number: -856416500
+
+File: .
+Type: directory
+Permissions: rwxr-w-wx
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:49:12 2012
+Links: 3
+Size: 4096
+I-Node Number: 228383245
+
+File: ..
+Type: directory
+Permissions: rwxr-w-wx
+Owner: pgeromin
+Group: cs2013
+Last Modified: Mon Dec  3 21:20:39 2012
+Links: 8
+Size: 4096
+I-Node Number: 2098712630
+
+File: p6
+Type: regular file
+Permissions: rwxr-w-wx
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:49:13 2012
+Links: 1
+Size: 7200
+I-Node Number: 1247097163
+
+File: dist
+Type: directory
+Permissions: rwxr-w-wx
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:50:05 2012
+Links: 2
+Size: 4096
+I-Node Number: 88505353
+
+File: main.o
+Type: regular file
+Permissions: rw-r---w-
+Owner: pgeromin
+Group: cs2013
+Last Modified: Wed Dec  5 13:49:12 2012
+Links: 1
+Size: 3012
+I-Node Number: 1152251106

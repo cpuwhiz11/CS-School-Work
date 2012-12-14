@@ -1,0 +1,9 @@
+Paul Geromini
+Assignment 5
+01056543
+
+paul_geromini@student.uml.edu
+
+	For this assignment I followed the discussion in class and implemented the best fit 
+and first fit algorithms with relative ease. I just followed the notes. The buddy system however was much harder and I was unable to get it working properly. Therefore I finished about 70% about the assignment. I have included examples of the two working algorithms in 4 output files.
+

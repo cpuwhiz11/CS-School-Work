@@ -1,0 +1,878 @@
+Paul Geromini
+01056543
+paul_geromini@student.uml.edu
+
+	I implemented the code from the online help and using the information we went over
+	in class and my past work I finished this project with no notable errors, so 100% completion. 
+	
+	When analyzing the runs, given the base case of producing 200 donuts the 50% deadlock rate occurs at about a queue size of 26700~. The deadlock rate drops precipitously down if we increase the queue by about 1000, or goes up if we decrease the queue size by 1000. This is indicated by the graph included.
+	
+	When we look to change the number of dozen donuts we produce we get very predictable deadlock results. When we produce under 200 donuts we get 0% deadlocks. When we produce above 200 donuts (250, 300) we get 100% deadlocks. This makes sense since the we got 50% deadlocks producing 200 dozen donuts. Thus any values more than that will increase the deadlock rate, but any value below that will decrease the rate. This is indicated by the included graph. 
+	
+Output
+
+FILE c1
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+1	1	1	1
+0	2	2	2
+0	3	0	3
+0	4	0	0
+0	5	0	0
+0	6	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+5	9	5	9
+0	10	6	10
+0	11	7	11
+0	0	8	12
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+15	16	15	0
+16	18	16	0
+18	21	19	0
+0	22	21	0
+0	0	23	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+28	30	27	31
+32	33	28	0
+33	34	0	0
+34	35	0	0
+35	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+56	69	43	43
+58	71	44	50
+61	72	47	0
+62	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+91	95	74	70
+93	97	0	73
+94	100	0	79
+96	0	0	86
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+110	119	99	113
+111	120	100	115
+113	127	101	0
+115	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+164	165	133	143
+167	167	136	147
+168	0	139	152
+169	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+202	0	189	188
+213	0	197	192
+214	0	0	193
+0	0	0	194
+0	0	0	195
+0	0	0	196
+0	0	0	197
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+245	252	236	243
+246	256	239	246
+254	257	0	0
+256	262	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+FILE c2
+
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+11	13	13	15
+12	14	14	16
+13	15	0	17
+14	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+26	29	29	0
+27	32	31	0
+30	0	33	0
+31	0	0	0
+36	0	0	0
+38	0	0	0
+40	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+59	67	46	49
+60	70	48	51
+0	0	50	52
+0	0	51	0
+0	0	52	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+86	94	69	69
+0	96	73	71
+0	98	77	72
+0	0	0	78
+0	0	0	81
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+116	124	96	111
+119	129	98	112
+121	0	0	116
+0	0	0	117
+0	0	0	123
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+153	163	138	145
+154	170	0	0
+156	171	0	0
+158	172	0	0
+160	0	0	0
+161	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+200	203	188	183
+206	206	190	185
+0	0	191	187
+0	0	192	0
+0	0	193	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+0	250	232	237
+0	251	233	239
+0	254	234	240
+0	255	0	242
+0	259	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+297	0	281	297
+298	0	0	298
+299	0	0	303
+301	0	0	304
+302	0	0	305
+305	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+351	370	336	357
+356	0	341	359
+358	0	347	363
+361	0	349	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+FILE c3
+
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+6	12	9	13
+7	0	10	14
+8	0	11	0
+9	0	12	0
+10	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+21	27	26	25
+22	28	0	26
+23	0	0	27
+25	0	0	28
+0	0	0	29
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+43	43	37	34
+44	45	0	35
+0	46	0	37
+0	47	0	0
+0	48	0	0
+0	49	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+64	75	54	53
+65	79	55	54
+72	0	58	59
+0	0	61	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+98	104	79	87
+102	105	81	89
+0	107	0	91
+0	0	0	94
+0	0	0	95
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+128	139	112	130
+129	141	113	131
+130	0	0	132
+132	0	0	135
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+175	184	150	159
+176	185	152	0
+177	0	155	0
+178	0	156	0
+180	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+216	214	204	199
+217	215	206	202
+0	218	207	204
+0	0	210	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+265	274	246	253
+268	276	250	254
+0	0	0	256
+0	0	0	257
+0	0	0	258
+0	0	0	261
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+321	328	299	316
+322	331	302	317
+0	334	0	320
+0	338	0	321
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+FILE c4
+
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+52	62	41	41
+53	63	42	42
+54	64	0	0
+55	65	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+90	93	71	75
+0	99	72	77
+0	0	75	82
+0	0	78	84
+0	0	0	85
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+114	123	102	114
+118	126	0	118
+0	128	0	119
+0	130	0	121
+0	133	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+159	169	137	144
+163	0	140	148
+165	0	141	150
+166	0	142	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+215	209	198	198
+0	210	199	0
+0	211	200	0
+0	212	201	0
+0	0	202	0
+0	0	203	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+262	268	242	251
+264	269	243	252
+0	270	244	0
+0	271	245	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+300	312	283	301
+304	314	0	306
+308	316	0	0
+309	317	0	0
+0	320	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+353	371	337	352
+354	372	340	353
+355	0	0	356
+357	0	0	360
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+420	462	414	420
+421	0	416	422
+422	0	417	425
+423	0	0	426
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+475	512	462	474
+480	523	464	477
+485	0	0	481
+486	0	0	490
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+FILE c5
+
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 1
+Plain	Sprinkled	Apple	Cherry
+19	24	24	21
+20	25	25	22
+24	26	0	23
+0	0	0	24
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 2
+Plain	Sprinkled	Apple	Cherry
+45	50	38	39
+46	51	0	40
+47	52	0	0
+48	53	0	0
+0	54	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 3
+Plain	Sprinkled	Apple	Cherry
+76	80	63	61
+77	81	0	62
+78	82	0	63
+79	0	0	64
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 4
+Plain	Sprinkled	Apple	Cherry
+99	101	82	92
+100	108	84	96
+0	109	85	97
+0	0	0	98
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 5
+Plain	Sprinkled	Apple	Cherry
+133	144	114	129
+136	145	119	0
+137	0	120	0
+138	0	121	0
+139	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 6
+Plain	Sprinkled	Apple	Cherry
+189	194	173	168
+190	195	174	0
+191	196	175	0
+192	0	176	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 7
+Plain	Sprinkled	Apple	Cherry
+227	227	220	218
+228	228	221	219
+229	0	222	0
+230	0	0	0
+231	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 8
+Plain	Sprinkled	Apple	Cherry
+274	283	254	273
+275	284	255	274
+276	0	256	0
+0	0	257	0
+0	0	258	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 9
+Plain	Sprinkled	Apple	Cherry
+329	346	308	331
+330	347	309	332
+0	348	310	333
+0	0	0	334
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+Thread: 50
+Time: 23:39:19
+Dozen number: 10
+Plain	Sprinkled	Apple	Cherry
+387	412	372	381
+388	413	0	382
+389	414	0	383
+390	415	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+
+

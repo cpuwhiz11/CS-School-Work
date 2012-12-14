@@ -1,0 +1,17 @@
+Paul Geromini
+01056543
+
+Assignment 2
+paul_geromini@student.uml.edu
+
+I completed all the requirements of the assignment with no bugs so 100% completion. 
+My strategy with these three programs to take the code from my last assignment and modify
+it with what I needed to do to complete the assignment. This involved manipulating the 
+proper channels so that everything was where it should be. Then just debug when things 
+were not working and I was golden. 
+
+The second grep program with the second dataset had a much larger dataset. Because this 
+dataset was so large it overloaded the buffer grep was writting to. Thus grep became blocked.
+The parent however was still feeding data to grep and since the child process was blocked it 
+became blocked as well. Thus the whole program became deadlocked. This is the expected
+behavior.
