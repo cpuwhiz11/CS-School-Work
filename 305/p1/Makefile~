@@ -1,0 +1,7 @@
+#Makefile For Assignment 1
+#Paul Geromini
+#
+#
+
+prgrm1 : convert_float_to_bits.c
+	gcc -ansi -Wall -o prgrm 1 convert_float_to_bits.c

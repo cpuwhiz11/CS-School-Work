@@ -1,0 +1,10 @@
+Paul Geormini / paul_geromini@student.uml.edu 
+01056543
+
+Assignment Two
+Add Two Floating Point Numbers
+
+	I completed all the parts of this assignment to the fullest, thus 100% completion. The only known bug is, when adding certain floating values there is a loss 
+of precision to a certain decimal place. This happens because we do not keep track of the lost mantissa bits when we shift them. Thus given a complicated mantissa some active bits will be shifted out and replaced with 0's resulting in a loss of precision. This bug however is beyond the purview of this program. My plan for this assignment was to follow the outline provided by the assignment summary. First I added the hidden bit to get to the full 24 bits for 
+the mantissa. Next I shift the mantissas of the two entered float so that the would be equal. In other words both floats mantissas would be the same. Then I added the 
+mantissas. Then I checked for overflow and for infinity. Finally I added the sign bit and computed the actual result. Then this was all printed out.  

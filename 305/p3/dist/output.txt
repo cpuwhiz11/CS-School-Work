@@ -1,0 +1,132 @@
+
+[pgeromin@mercury p3]$ ./mic1 prom.dat p3.obj 0 2048
+
+Read in 81 micro instructions
+Read in 115 machine instructions
+Starting PC is : 0000000000000000  base 10:       0
+Starting SP is : 0000100000000000  base 10:    2048
+
+
+ProgramCounter : 0000000000100100  base 10:      36
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111100000000  base 10:   65280
+TempInstr      : 1000000000000000  base 10:   32768
+StackPointer   : 0000100000000000  base 10:    2048
+ARegister      : 0000000000000001  base 10:       1
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 35109454
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 99
+     the location   99 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: f
+Type the number of forward locations to dump: 100
+     the location  100 has value 0000000000000011 , or     3  or signed      3
+     the location  101 has value 0000000000001001 , or     9  or signed      9
+     the location  102 has value 0000000000010010 , or    18  or signed     18
+     the location  103 has value 0000000000010111 , or    23  or signed     23
+     the location  104 has value 0000000000011001 , or    25  or signed     25
+     the location  105 has value 0000000000000010 , or     2  or signed      2
+     the location  106 has value 0000000000100010 , or    34  or signed     34
+     the location  107 has value 0000101000011000 , or  2584  or signed   2584
+     the location  108 has value 0110111111110001 , or 28657  or signed  28657
+     the location  109 has value 0010010100010001 , or  9489  or signed   9489
+     the location  110 has value 0000000001101001 , or   105  or signed    105
+     the location  111 has value 0000000001101110 , or   110  or signed    110
+     the location  112 has value 0000000000000000 , or     0  or signed      0
+     the location  113 has value 0000000000000001 , or     1  or signed      1
+     the location  114 has value 0000000000000000 , or     0  or signed      0
+     the location  115 has value 1111111111111111 , or 65535  or signed     -1
+     the location  116 has value 1111111111111111 , or 65535  or signed     -1
+     the location  117 has value 1111111111111111 , or 65535  or signed     -1
+     the location  118 has value 1111111111111111 , or 65535  or signed     -1
+     the location  119 has value 1111111111111111 , or 65535  or signed     -1
+     the location  120 has value 1111111111111111 , or 65535  or signed     -1
+     the location  121 has value 1111111111111111 , or 65535  or signed     -1
+     the location  122 has value 1111111111111111 , or 65535  or signed     -1
+     the location  123 has value 1111111111111111 , or 65535  or signed     -1
+     the location  124 has value 1111111111111111 , or 65535  or signed     -1
+     the location  125 has value 1111111111111111 , or 65535  or signed     -1
+     the location  126 has value 1111111111111111 , or 65535  or signed     -1
+     the location  127 has value 1111111111111111 , or 65535  or signed     -1
+     the location  128 has value 1111111111111111 , or 65535  or signed     -1
+     the location  129 has value 1111111111111111 , or 65535  or signed     -1
+     the location  130 has value 1111111111111111 , or 65535  or signed     -1
+     the location  131 has value 1111111111111111 , or 65535  or signed     -1
+     the location  132 has value 1111111111111111 , or 65535  or signed     -1
+     the location  133 has value 1111111111111111 , or 65535  or signed     -1
+     the location  134 has value 1111111111111111 , or 65535  or signed     -1
+     the location  135 has value 1111111111111111 , or 65535  or signed     -1
+     the location  136 has value 1111111111111111 , or 65535  or signed     -1
+     the location  137 has value 1111111111111111 , or 65535  or signed     -1
+     the location  138 has value 1111111111111111 , or 65535  or signed     -1
+     the location  139 has value 1111111111111111 , or 65535  or signed     -1
+     the location  140 has value 1111111111111111 , or 65535  or signed     -1
+     the location  141 has value 1111111111111111 , or 65535  or signed     -1
+     the location  142 has value 1111111111111111 , or 65535  or signed     -1
+     the location  143 has value 1111111111111111 , or 65535  or signed     -1
+     the location  144 has value 1111111111111111 , or 65535  or signed     -1
+     the location  145 has value 1111111111111111 , or 65535  or signed     -1
+     the location  146 has value 1111111111111111 , or 65535  or signed     -1
+     the location  147 has value 1111111111111111 , or 65535  or signed     -1
+     the location  148 has value 1111111111111111 , or 65535  or signed     -1
+     the location  149 has value 1111111111111111 , or 65535  or signed     -1
+     the location  150 has value 1111111111111111 , or 65535  or signed     -1
+     the location  151 has value 1111111111111111 , or 65535  or signed     -1
+     the location  152 has value 1111111111111111 , or 65535  or signed     -1
+     the location  153 has value 1111111111111111 , or 65535  or signed     -1
+     the location  154 has value 1111111111111111 , or 65535  or signed     -1
+     the location  155 has value 1111111111111111 , or 65535  or signed     -1
+     the location  156 has value 1111111111111111 , or 65535  or signed     -1
+     the location  157 has value 1111111111111111 , or 65535  or signed     -1
+     the location  158 has value 1111111111111111 , or 65535  or signed     -1
+     the location  159 has value 1111111111111111 , or 65535  or signed     -1
+     the location  160 has value 1111111111111111 , or 65535  or signed     -1
+     the location  161 has value 1111111111111111 , or 65535  or signed     -1
+     the location  162 has value 1111111111111111 , or 65535  or signed     -1
+     the location  163 has value 1111111111111111 , or 65535  or signed     -1
+     the location  164 has value 1111111111111111 , or 65535  or signed     -1
+     the location  165 has value 1111111111111111 , or 65535  or signed     -1
+     the location  166 has value 1111111111111111 , or 65535  or signed     -1
+     the location  167 has value 1111111111111111 , or 65535  or signed     -1
+     the location  168 has value 1111111111111111 , or 65535  or signed     -1
+     the location  169 has value 1111111111111111 , or 65535  or signed     -1
+     the location  170 has value 1111111111111111 , or 65535  or signed     -1
+     the location  171 has value 1111111111111111 , or 65535  or signed     -1
+     the location  172 has value 1111111111111111 , or 65535  or signed     -1
+     the location  173 has value 1111111111111111 , or 65535  or signed     -1
+     the location  174 has value 1111111111111111 , or 65535  or signed     -1
+     the location  175 has value 1111111111111111 , or 65535  or signed     -1
+     the location  176 has value 1111111111111111 , or 65535  or signed     -1
+     the location  177 has value 1111111111111111 , or 65535  or signed     -1
+     the location  178 has value 1111111111111111 , or 65535  or signed     -1
+     the location  179 has value 1111111111111111 , or 65535  or signed     -1
+     the location  180 has value 1111111111111111 , or 65535  or signed     -1
+     the location  181 has value 1111111111111111 , or 65535  or signed     -1
+     the location  182 has value 1111111111111111 , or 65535  or signed     -1
+     the location  183 has value 1111111111111111 , or 65535  or signed     -1
+     the location  184 has value 1111111111111111 , or 65535  or signed     -1
+     the location  185 has value 1111111111111111 , or 65535  or signed     -1
+     the location  186 has value 1111111111111111 , or 65535  or signed     -1
+     the location  187 has value 1111111111111111 , or 65535  or signed     -1
+     the location  188 has value 1111111111111111 , or 65535  or signed     -1
+     the location  189 has value 1111111111111111 , or 65535  or signed     -1
+     the location  190 has value 1111111111111111 , or 65535  or signed     -1
+     the location  191 has value 1111111111111111 , or 65535  or signed     -1
+     the location  192 has value 1111111111111111 , or 65535  or signed     -1
+     the location  193 has value 1111111111111111 , or 65535  or signed     -1
+     the location  194 has value 1111111111111111 , or 65535  or signed     -1
+     the location  195 has value 1111111111111111 , or 65535  or signed     -1
+     the location  196 has value 1111111111111111 , or 65535  or signed     -1
+     the location  197 has value 1111111111111111 , or 65535  or signed     -1
+     the location  198 has value 1111111111111111 , or 65535  or signed     -1
+     the location  199 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: q
+MIC-1 emulator finishing, goodbye

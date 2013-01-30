@@ -1,0 +1,23 @@
+Building MASM
+[pgeromin@mercury p4]$ make
+gcc -o masm mic1symasm_nand_rshift.o lex.yy.o -ll
+
+Building promfile
+
+[pgeromin@mercury p4]$ ./mcc <promfile_nand_rshift.me > promfile.dat
+Microcode Compiler - Version 1.0 - Richard Boccuzzi
+
+Building tests
+
+[pgeromin@mercury p4]$ ./masm < a4_mult_test.asm > multtest.obj
+[pgeromin@mercury p4]$ ./masm < a4_rshift_test.asm > rshifttest.obj
+[pgeromin@mercury p4]$ ./masm < a4_div_test.asm > divtest.obj
+
+Running Tests
+
+./mic1 promfile.dat rshifttest.obj 0 2048
+./mic1 promfile.dat multtest.obj 0 2048
+./mic1 promfile.dat divtest.obj 0 2048
+
+
+

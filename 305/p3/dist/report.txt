@@ -1,0 +1,8 @@
+Paul Geormini / paul_geromini@student.uml.edu 
+01056543
+
+Assignment Three
+Fibonacci with Assembly
+
+I have completed this assignment fully with no found bugs. Thus 100% completion. I will however note that when finding the Fibonacci value of 25 the result the program returns is 9489, when it should be 75025. This is because that value overflows the space it was provided. To solve it is beyond the purview of this assignment and thus it remains. My strategy towards this assignment was to replicate the shape and structure of the original c code. I had two arrays, one of numbers to find the Fibonacci on and the other to put the results in. The program will take the numbers from the array, find the Fibonacci value for it, and place it into the result array. It will then stop so memory can be investigated and the answer observed.
+

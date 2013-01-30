@@ -1,0 +1,10 @@
+# Makefile for assignment 5
+# Paul Geromini
+#
+#
+
+p5 : p5.asm
+	./masm_MulRshDiv < p5.asm > p5.obj
+
+clean :
+	rm *.0bj

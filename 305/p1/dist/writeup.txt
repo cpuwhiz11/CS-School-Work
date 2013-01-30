@@ -1,0 +1,11 @@
+Paul Geromini
+01056543
+
+Homework #1
+Write Up
+
+	I achieved all the problems in this assignment exactly as specified. Therefore I achieved 100% of the problems detailed in this assignment. My approach to this assignment was to follow the framework that had been laid out in the given file (“convert_float_to_bits.c”). I saw how the values I needed to print out were being stored in the union created at the top of the file. From then it was merely an exercise in printing out the proper data at the proper points. Then I spent some time formatting the print outs so it would look nice and pretty. Finally I made a make file to facilitate easy compiling and testing. 
+
+
+
+Email : paul_geromini@student.uml.edu

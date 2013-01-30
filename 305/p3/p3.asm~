@@ -1,0 +1,17 @@
+	;; Paul Geromini
+
+daddr:	data:			; Holds data numbers
+data:	3
+	9
+	18
+	23
+	25			; Last data value
+dcnt:	5			; Holds element count
+rslt:	fibS:			; Holds results
+fibS:   0
+	0
+	0
+	0
+	0 	 		; Will hold the results, initialize to 0
+	.LOC 17 		; Force fib computation to start on line 17
+fib:	lodl 1

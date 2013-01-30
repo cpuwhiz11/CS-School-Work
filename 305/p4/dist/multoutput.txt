@@ -1,0 +1,165 @@
+
+[pgeromin@mercury p4]$ ./mic1 promfile.dat multtest.obj 0 2048
+
+Read in 125 micro instructions
+Read in 36 machine instructions
+Starting PC is : 0000000000000000  base 10:       0
+Starting SP is : 0000100000000000  base 10:    2048
+
+
+ProgramCounter : 0000000000000100  base 10:       4
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111111  base 10:    2047
+ARegister      : 0000100111101110  base 10:    2542
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000001  base 10:       1
+FRegister      : 0000000000000000  base 10:       0
+
+Total cycles   : 59
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000000100
+
+
+ProgramCounter : 0000000000001000  base 10:       8
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111110  base 10:    2046
+ARegister      : 1111111010010110  base 10:   65174
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000101101010  base 10:     362
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 1100101110101101  base 10:   52141
+
+Total cycles   : 273
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000001000
+
+
+ProgramCounter : 0000000000001100  base 10:      12
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111101  base 10:    2045
+ARegister      : 0000001000001000  base 10:     520
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000001  base 10:       1
+FRegister      : 0111111111111000  base 10:   32760
+
+Total cycles   : 588
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000001100
+
+
+ProgramCounter : 0000000000010000  base 10:      16
+Accumulator    : 1111111111111111  base 10:   65535
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111100  base 10:    2044
+ARegister      : 1111100000000000  base 10:   63488
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000100000000000  base 10:    2048
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 1000000000000000  base 10:   32768
+
+Total cycles   : 714
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000010000
+
+
+ProgramCounter : 0000000000010100  base 10:      20
+Accumulator    : 1111111111111111  base 10:   65535
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111011  base 10:    2043
+ARegister      : 0000001011001011  base 10:     715
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000000  base 10:       0
+ERegister      : 0000000000000001  base 10:       1
+FRegister      : 1000100011011011  base 10:   35035
+
+Total cycles   : 971
+
+Type decimal address to view memory,  q  to quit or  c  to continue: c
+
+The new PC is  : 0000000000010100
+
+
+ProgramCounter : 0000000000011000  base 10:      24
+Accumulator    : 0000000000000000  base 10:       0
+InstructionReg : 1111111111000000  base 10:   65472
+TempInstr      : 1100000000000000  base 10:   49152
+StackPointer   : 0000011111111010  base 10:    2042
+ARegister      : 1111111111111111  base 10:   65535
+BRegister      : 0000000000000000  base 10:       0
+CRegister      : 0000000000000000  base 10:       0
+DRegister      : 0000000000000001  base 10:       1
+ERegister      : 0000000000000000  base 10:       0
+FRegister      : 1111111111001000  base 10:   65480
+
+Total cycles   : 1257
+
+Type decimal address to view memory,  q  to quit or  c  to continue: 2048
+     the location 2048 has value 1111111111111111 , or 65535  or signed     -1
+Type  <Enter>  to continue debugging
+Type        q  to quit
+Type        f for forward range
+Type        b for backward range: b
+Type the number of reverse locations to dump: 10
+     the location 2047 has value 0000000000000000 , or     0  or signed      0
+     the location 2046 has value 1100101110101110 , or 52142  or signed -13394
+     the location 2045 has value 0111111111111000 , or 32760  or signed  32760
+     the location 2044 has value 1111100000000000 , or 63488  or signed  -2048
+     the location 2043 has value 0000001011001011 , or   715  or signed    715
+     the location 2042 has value 1111111111001001 , or 65481  or signed    -55
+     the location 2041 has value 1111111111111111 , or 65535  or signed     -1
+     the location 2040 has value 1111111111111111 , or 65535  or signed     -1
+     the location 2039 has value 1111111111111111 , or 65535  or signed     -1
+     the location 2038 has value 1111111111111111 , or 65535  or signed     -1
+Type decimal address to view memory,  q  to quit or  c  to continue: q
+MIC-1 emulator finishing, goodbye
+
+
+In summary :
+
+0 * 2542
+AC: 0
+SP: 0
+
+-362 * 37
+AC: 0
+SP: -13394
+
+520 * 63
+AC: 0
+SP: 32760
+
+-2048 * 16
+AC: 1
+SP: -2048 
+This is an error should be, -32768
+
+715 * 49
+AC: 1
+SP: 715
+
+-1 * 55
+AC: 0
+SP: -55

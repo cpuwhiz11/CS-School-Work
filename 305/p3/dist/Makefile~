@@ -1,0 +1,10 @@
+#Makefile for assignment 3
+#Paul Geromini
+#
+#
+
+p3 : p3.asm
+	./masm < p3.asm > p3.obj
+
+clean :
+	rm *.obj 
