@@ -33,7 +33,7 @@ void DeckofCards::printDeck() {
 
 }
 
-// This function produces biased results re ->  
+// For a discussion on card shuffling ->  
 //http://datagenetics.com/blog/november42014/index.html
 void DeckofCards::shuffle() {
 
