@@ -33,6 +33,8 @@ void DeckofCards::printDeck() {
 
 }
 
+// This function produces biased results re ->  
+//http://datagenetics.com/blog/november42014/index.html
 void DeckofCards::shuffle() {
 
     int num1, num2, counter = 0 ;
